@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/CSS_REVERDY.css" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+        <link rel="icon" type="image/png" href="../images/icons_bootstrap/strava.svg" />
+        <!-- script ajouté pour permettre l'initialisations des poppers -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>
+            Projet professionnel
+        </title>
+    </head>
+
+    <body>
+        <!--debut du header-->
+        <header class="py-4 colorBleu">
+            <!--debut loading bar-->
+            <div class="text-center">
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">
+                        Loading...
+                    </span>
+                </div>
+            </div>
+            <!--fin loading bar-->
+            <noscript>Ce site web nécessite l'utilisation de Javascript</noscript>
+        </header>
+        <!--fin du header-->
+        <!-- debut navbar -->
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    REVERDY Marine
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <span>
+                                    CV numérique
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="competences.html">
+                                <span>
+                                    Compétences & Projets
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projetprofessionnel.html">
+                                <span>
+                                    Projet professionnel
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="liensutiles.html">
+                                <span>
+                                    Liens utiles
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                &#127760; Fr
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
+                                <li>
+                                    <a href="../fr/projetprofessionnel.html" class="dropdown-item text-decoration-underline">
+                                        Français
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../en/projetprofessionnel.html" class="dropdown-item text-decoration-underline">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin navbar -->
+        <section>
+            <aside class="container-fluid text-center text-light pb-5 pt-4 ps-5 pe-5">
+                <h2 class="titre1 h1">
+                    Projet professionnel
+                </h2>
+            </aside>
+            <!-- debut article année prochaine -->
+            <aside class="text-light container-fluid ps-5 pe-4">
+                <div class="pt-5 pb-4">
+                    <div class="row">
+                        <div class="col-lg-6 ps-4 pe-5">
+                            <p class="justify">
+                                Concernant les années à venir, je compte poursuivre mes études actuelles en BUT Réseaux et Télécommunications spécialité
+                                <a
+                                    class="text-decoration-underline link-light text-center"
+                                    data-toggle="popover"
+                                    title="Parcours Cybersécurité"
+                                    data-bs-content="Le parcours Cybersécurité met l'accent sur les compétences en lien avec l'ensemble des métiers liés à la sécurité des systèmes d'information, de l'installation d'équipements de sécurité (Firewall, sondes) et à leur surveillance."
+                                >cybersécurité</a>
+                                afin d'être en mesure de par la suite intégrer une école d'ingénieur dans le but de me spécialiser davantage dans le domaine de la Cybersécurité. En effet, ma constante envie d'apprendre et mon intérêt pour
+                                l'informatique et notamment la sécurité informatique me guide vers cette voie.
+                            </p>
+                        </div>
+                        <div class="flip-card px-md-5 col-lg-6 py-3 pb-5">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front2">
+                                    <img src="../images/securite.jpg" alt="cyber" />
+                                </div>
+                                <div class="flip-card-back2 text-black overflow-auto taille ps-3 py-4">
+                                    <p class="justify">
+                                        La nécessité de développer des stratégies de protection, pour les entreprises, les employés et les personnes est maintenant devenue indispensable à notre société. Je souhaite prendre part à cette
+                                        nécessité et aider à assurer la sécurité informatique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- début flèche -->
+                <div class="text-end d-block me-5 pt-5">
+                    <a class="pt-5 btn" href="#top">
+                        <img src="../images/icons_bootstrap/chevron-up.svg" alt="chevron" id="fleche" />
+                    </a>
+                </div>
+                <!-- fin flèche-->
+            </aside>
+            <!-- fin article année prochaine-->
+        </section>
+        <!-- début footer -->
+        <footer class="container-fluid col-12 py-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-muted">
+                        CV numérique
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="competences.html" class="nav-link px-2 text-muted">
+                        Compétences & Projets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projetprofessionnel.html" class="nav-link px-2 text-muted">
+                        Projet professionnel
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="liensutiles.html" class="nav-link px-2 text-muted">
+                        Liens utiles
+                    </a>
+                </li>
+            </ul>
+            <p id="policeFooter" class="text-center text-muted">
+                &copy; 2023 Realisé par Marine REVERDY
+            </p>
+        </footer>
+        <!-- fin footer -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <!-- script pour initialiser les popover -->
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+        <!-- fin du script pour initialiser les popovers -->
+    </body>
+</html>

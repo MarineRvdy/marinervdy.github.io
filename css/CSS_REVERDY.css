@@ -1,0 +1,483 @@
+/* ============= commun à toutes les pages ================*/
+
+/* espacement des lettres */
+p, h1, .navbar {
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+/* justifier le text */
+.justify {
+    text-align: justify;
+}
+
+
+/* police des caractères*/
+p, .taille {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+footer, #policeFooter {
+    font-size: 14px;
+ }
+
+
+/* couleur de fond */
+nav, aside, footer {
+    background-color: #2c3531;
+}
+
+.rond {
+    border-radius: 90px;
+    box-shadow: 0px 20px 40px -10px rgb(0,0,0,0.2);
+}
+
+body, header, section, article {
+    background-color:#116466;
+
+}
+
+#Scolor {
+    background-color: #D9B08C;
+}
+
+/* couleur de base */
+.colorBleu {
+    background-color:  #2c3531;
+}
+
+.colorSaumon {
+    background-color:#D9B08C;
+}
+
+.colorCanard {
+    background-color:  #116466;
+}
+
+.colorSaumonClair {
+    background-color:#FFCB9A;
+}
+
+.colorGris {
+    background-color:#413e3b;
+}
+
+/* flèche revenir en haut */
+#fleche {
+    background: #D9B08C;
+    width: 50px;
+    padding: 8px;
+    border-radius: 0.4em;
+    border: solid #2c3531;
+}
+
+.check {
+    width: 10%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #116466;
+    border-radius: 10px;
+}
+
+/* hover navbar */
+a span:hover {
+    color: #FFCB9A;
+  }
+
+/* titre */
+.titre1, .titre2, .titre3{
+
+    text-transform:uppercase;
+    letter-spacing:1px;
+    letter-spacing:3px;
+    position:relative;
+    font-family: "eurostile", sans-serif;
+}
+
+.titre1::after{
+    content:'';
+    position:absolute;
+    top:calc(100% + 1.5rem);
+    height:5px;width:3rem;
+    background:#D9B08C;left:50%;
+    transform:translateX(-50%);
+    border-radius:5px
+}
+
+.titre2::after{
+    content:'';
+    position:absolute;
+    top:calc(100% + 1.5rem);
+    height:5px;width:3rem;
+    background:#D9B08C;left:50%;
+    transform:translateX(-630%);
+    border-radius:5px
+}
+
+.titre3::after{
+    content:'';
+    position:absolute;
+    top:calc(100% + 1.5rem);
+    height:5px;width:3rem;
+    background:#116466;left:50%;
+    transform:translateX(-50%);
+    border-radius:5px
+}
+
+
+/* animation bouton */
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* bordures */
+.bord {
+    border: 12px solid #D9B08C;
+}
+
+/* ============= index.php ================*/
+
+/* mise en place du header */
+#nom {
+    color: #f2f7f5;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+#formation {
+    display: inline;
+    border: solid #E9EBEA 0.5px;
+    border-radius: 15px;
+    padding: 0.48828125%;
+    padding-left: 2.9296875%;
+    padding-right: 2.9296875%;
+    color: #E9EBEA;
+    background:rgba(27, 39, 56, 0.6);
+    font-size: 100%;
+}
+
+.photoProfil {
+    width: 30%;
+    border-radius: 3%;
+}
+.underwater {
+    background: url(../images/under.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 655px;
+}
+.underwater1 {
+    background: url(../images/underSeparer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 2px;
+}
+
+.underwater2 {
+    background: url(../images/underSeparer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 7px;
+}
+
+.underwater3 {
+    background: url(../images/underSeparer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 14px;
+}
+
+/* trait séparation */
+.trait1 {
+    width: 100%;
+    height: 2px;
+}
+
+.trait2 {
+    width: 100%;
+    height: 7px;
+}
+
+.trait3 {
+    width: 100%;
+    height: 14px;
+}
+
+
+
+/* images langues */
+.imgFr, .imgEs {
+    border-radius: 50%;
+    width: 57%;
+}
+
+.imgEn {
+    padding-top: 1px;
+    width: 62%;
+    border-radius: 100%;
+}
+
+/* hover interets */
+.carte {
+    position: relative;
+    overflow: hidden;
+}
+
+.carte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.carte .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond opaque */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+
+}
+
+.carte:hover img {
+    opacity: 0.7; /* Opacité de l'image au survol */
+}
+
+.carte:hover .content {
+    opacity: 1; /* Affichage du contenu par-dessus au survol */
+}
+
+.carte .content p {
+    color: white; /* Couleur du texte du contenu par-dessus */
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+
+/*animation text index */
+#animated-text {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+.content:hover #animated-text {
+    opacity: 1;
+    animation: typeText 1.6s steps(20, end) forwards;
+    
+}
+
+
+@keyframes typeText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#animated-text2 {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+.content:hover #animated-text2 {
+    opacity: 1;
+    animation: typeText2 1.6s steps(20, end) forwards;
+    
+}
+
+
+@keyframes typeText2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+#animated-text3 {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+.content:hover #animated-text3 {
+    opacity: 1;
+    animation: typeText3 1.6s steps(20, end) forwards;
+    
+}
+
+
+@keyframes typeText3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* ============= competences.html et projetprofessionnel.html ================*/
+
+/* flèche carousel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #2c3531;
+}
+
+
+
+/* flip card*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px 20px 16px 16px
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px 20px 16px 16px
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-front2 {
+    background-color: #D9B08C;
+    color: black;
+    border-radius: 20px 20px 16px 16px;
+
+}
+
+.flip-card-back, .flip-card-back2 {
+    background-color: #FFCB9A;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px 20px 16px 16px;
+    padding: 1em 0.6em 1em 0.6em;
+
+}
+
+.flip-card-front .img {
+    width: 100%;
+    height: 83%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.flip-card-front2 img {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px 16px 16px 16px;
+}
+
+
+
+/* ============= liensutiles.php================*/
+
+
+/* couleurs des erreurs */
+.error {color: #FF0000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
