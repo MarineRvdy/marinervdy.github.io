@@ -25,6 +25,9 @@ footer, #policeFooter {
     font-size: 14px;
  }
 
+.colorSaumonText {
+    color:#ffcb9a
+}
 
 /* couleur de fond */
 nav, aside, footer {
@@ -116,7 +119,7 @@ a span:hover {
     height:5px;width:3rem;
     background:#D9B08C;left:50%;
     transform:translateX(-50%);
-    border-radius:5px
+    border-radius:5px;
 }
 
 .titre2::after{
@@ -150,7 +153,7 @@ a span:hover {
     border: 12px solid #D9B08C;
 }
 
-/* ============= index.php ================*/
+/* ============= index.html ================*/
 
 /* mise en place du header */
 #nom {
@@ -355,6 +358,142 @@ a span:hover {
         width: 100%;
     }
 }
+
+
+/* Ligne verticale centrale */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+  max-width: 700px;
+}
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  background: #D9B08C;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgb(255, 203, 154, 0.3);
+}
+.timeline-item .card {
+    border-radius: 20px;
+}
+.timeline-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrage des cartes sur mobile */
+@media (max-width: 991.98px) { 
+    .timeline {
+    padding-left: 0;      
+    padding-right: 0;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+    .timeline-item {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 0; 
+  }
+
+
+    .timeline-dot {
+        display: none;
+    }
+
+  .timeline-line  {
+    display: none; 
+  }
+}
+
+
+/* Ligne horizontale (desktop) */
+.timeline-line-horizontal {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 0;
+  transform: translateY(15px); 
+}
+
+/* Points sur la ligne */
+.timeline-dot-horizontal {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #D9B08C;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 203, 154, 0.3);
+  z-index: 2;
+}
+
+/* Cartes */
+.timeline-card {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  padding-top: 60px;
+  z-index: 3;
+}
+.timeline-card .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+}
+.timeline-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Centrage des cartes sur mobile */
+@media (max-width: 991.98px) { 
+  .timeline-horizontal {
+    align-items: center !important; /* centre les éléments verticalement */
+  }
+
+  .timeline-card {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .timeline-dot-horizontal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-line-horizontal {
+    display: none; 
+  }
+}
+
 /* ============= competences.html et projetprofessionnel.html ================*/
 
 /* flèche carousel */
@@ -413,7 +552,7 @@ a span:hover {
 }
 
 .flip-card-back, .flip-card-back2 {
-    background-color: #FFCB9A;
+    background-color: #ffcb9a;
     color: white;
     transform: rotateY(180deg);
     border-radius: 20px 20px 16px 16px;
@@ -439,39 +578,11 @@ a span:hover {
 
 
 
-/* ============= liensutiles.php================*/
+/* ============= liensutiles.html ================*/
 
 
 /* couleurs des erreurs */
 .error {color: #FF0000;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

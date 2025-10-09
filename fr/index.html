@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/CSS_REVERDY.css" />
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <link rel="icon" type="image/png" href="../images/icons_bootstrap/journal-bookmark-fill.svg" />
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <title>CV numérique</title>
     </head>
     <body>
@@ -85,70 +86,96 @@
                 </div>
             </article>
             <!-- fin a propos -->
-           <!-- début formation -->
-<aside class="rond container text-light text-center py-5 ps-5 pe-5">
-    <h2 class="titre1 mb-5 col-lg-12 h1">Formations</h2>
+            <!-- Début formation -->
+            <aside id="formations" class="rond rond container text-light text-center py-5 ps-5 pe-5">
+            <div class="container">
+                <h2 class="text-center titre1 h1 mb-5">Formations</h2>
 
-    <div class="row justify-content-center">
+                <div class="timeline position-relative">
+                <!-- Ligne verticale -->
+                <div class="timeline-line"></div>
 
-        <!-- Formation 1 -->
-        <div class="col-lg-6 pt-4 pb-4 position-relative">
-            <h3 class="mb-2">2024 - 2027</h3>
-            <p><strong>4e année en école d'ingénieure Informatique et Réseaux</strong></p>
-            <p>ISEN Ouest - Brest (29)</p>
-        </div>
+                <!-- Formation 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card bg-secondary bg-opacity-25 border-0 p-4 rounded-4 shadow-sm">
+                    <h3 class="h5 fw-bold colorSaumonText">2024 - 2027</h3>
+                    <p class="mb-1"><strong>4e année en école d'ingénieur Informatique et Réseaux</strong></p>
+                    <p class="text-muted">ISEN Ouest - Brest (29)</p>
+                    </div>
+                </div>
 
-        <!-- Formation 2 -->
-        <div class="col-lg-6 pt-4 pb-4 position-relative">
-            <h3 class="mb-2">2022 - 2024</h3>
-            <p><strong>BUT Réseaux et Télécoms</strong> (spécialité <strong>cybersécurité</strong>)</p>
-            <p>IUT Lannion (22)</p>
-        </div>
+                <!-- Formation 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card bg-secondary bg-opacity-25 border-0 p-4 rounded-4 shadow-sm">
+                    <h3 class="h5 fw-bold colorSaumonText">2022 - 2024</h3>
+                    <p class="mb-1"><strong>BUT Réseaux et Télécoms</strong> (spécialité <strong>cybersécurité</strong>)</p>
+                    <p class="text-muted">IUT Lannion (22)</p>
+                    </div>
+                </div>
 
-        <!-- Formation 3 -->
-        <div class="col-lg-6 pt-4 pb-4 position-relative">
-            <h3 class="mb-2">2022</h3>
-            <p><strong>Bac général</strong> (spécialités Mathématiques, Physique-Chimie)</p>
-            <p>Lycée Bossuet - Lannion (22)</p>
-            <p><strong>Mention bien</strong></p>
-        </div>
+                <!-- Formation 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card bg-secondary bg-opacity-25 border-0 p-4 rounded-4 shadow-sm">
+                    <h3 class="h5 fw-bold colorSaumonText">2022</h3>
+                    <p class="mb-1"><strong>Bac général</strong> (Maths, Physique-Chimie)</p>
+                    <p class="text-muted">Lycée Bossuet - Lannion (22)</p>
+                    <p><strong>Mention Bien</strong></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </aside>
+            <!-- Fin formation -->
+            <!-- Début expériences -->
+            <article id="experiences" class="text-light py-5">
+            <div class="container">
+                <h2 class="text-center titre1 h1 mb-5">Expériences</h2>
 
-    </div>
-</aside>
-<!-- fin formation -->
+                <div class="timeline-horizontal d-flex flex-column flex-lg-row align-items-start justify-content-center position-relative">
 
-            <!-- début expériences -->
-<article class="my-5 container-fluid text-center text-light pt-5 pb-3 ps-5 pe-5">
-    <div class="row g-0 py-5">
-        <h2 class="titre1 h1 mb-5">Expériences</h2>
+                <!-- Ligne horizontale -->
+                <div class="timeline-line-horizontal d-none d-lg-block"></div>
 
-        <!-- Expérience 1 -->
-        <section class="pb-5 border-bottom border-secondary">
-            <h3>2024 - 2025</h3>
-            <p><strong>Responsable budget</strong><br>
-            Club BDD - ISEN Ouest - Brest (29)</p>
-            <p>Gérer et suivre le budget du club, coordonner les finances des projets, préparer des bilans financiers.</p>
-        </section>
+                <!-- Expérience 1 -->
+                <div class="timeline-card text-start position-relative mb-5 mb-lg-0 mx-lg-4" data-aos="fade-up">
+                    <div class="timeline-dot-horizontal"></div>
+                    <div class="card bg-secondary bg-opacity-25 border-0 rounded-4 shadow-sm p-4" style="min-width: 260px;">
+                    <h3 class="h5 fw-bold colorSaumonText">2024 - 2025</h3>
+                    <p class="mb-1"><strong>Responsable budget</strong></p>
+                    <p class="text-muted mb-1">Club BDD – ISEN Ouest, Brest (29)</p>
+                    <p class="small">Gestion du budget, coordination des finances, bilans financiers.</p>
+                    </div>
+                </div>
 
-        <!-- Expérience 2 -->
-        <section class="py-5 border-bottom border-secondary">
-            <h3>2024 <small>(3 mois)</small></h3>
-            <p><strong>Stage sécurité et développement</strong><br>
-            NOKIA - Lannion (22)</p>
-            <p>Développer un outil automatisé de contrôle des règles de pare-feu (TCP/UDP/ICMP) sur environnement multicloud (OpenStack), langages Python et Shell/Bash. Participation aux réunions et meetings.</p>
-        </section>
+                <!-- Expérience 2 -->
+                <div class="timeline-card text-start position-relative mb-5 mb-lg-0 mx-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot-horizontal"></div>
+                    <div class="card bg-secondary bg-opacity-25 border-0 rounded-4 shadow-sm p-4" style="min-width: 260px;">
+                    <h3 class="h5 fw-bold colorSaumonText">2024 <small>(3 mois)</small></h3>
+                    <p class="mb-1"><strong>Stage sécurité & développement</strong></p>
+                    <p class="text-muted mb-1">NOKIA – Lannion (22)</p>
+                    <p class="small">Développement d’un outil d’audit automatique des règles pare-feu (TCP/UDP/ICMP) sous OpenStack – Python, Bash.</p>
+                    </div>
+                </div>
 
-        <!-- Expérience 3 -->
-        <section class="pt-5">
-            <h3>2018 <small>(1 semaine)</small></h3>
-            <p><strong>Stage d’observation</strong><br>
-            NOKIA - Lannion (22)</p>
-            <p>Découverte data center, ingénieur des tests, cybersécurité, développement.</p>
-        </section>
-    </div>
-</article>
-<!-- fin expérience -->
+                <!-- Expérience 3 -->
+                <div class="timeline-card text-start position-relative mx-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot-horizontal"></div>
+                    <div class="card bg-secondary bg-opacity-25 border-0 rounded-4 shadow-sm p-4" style="min-width: 260px;">
+                    <h3 class="h5 fw-bold colorSaumonText">2018 <small>(1 semaine)</small></h3>
+                    <p class="mb-1"><strong>Stage d’observation</strong></p>
+                    <p class="text-muted mb-1">NOKIA – Lannion (22)</p>
+                    <p class="small">Découverte du data center, tests, cybersécurité, développement.</p>
+                    </div>
+                </div>
 
+                </div>
+            </div>
+            </article>
+            <!-- Fin expériences -->
             <!-- début langues -->
             <aside class="rond container" style="margin-bottom: 100px;">
                 <div class="text-light text-center py-5 ps-5 pe-5 mb-5">
@@ -333,5 +360,9 @@
         </footer>
         <!-- fin footer -->
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({ duration: 800, once: true });
+        </script>
     </body>
 </html>
