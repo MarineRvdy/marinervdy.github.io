@@ -179,14 +179,14 @@ a span:hover {
     border-radius: 3%;
 }
 .underwater {
-    background: url(../images/under.jfif);
+    background: url(../images/bg_sea.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 655px;
 }
 .underwater1 {
-    background: url(../images/underSeparer.jpg);
+    background: url(../images/bg_sea.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -194,7 +194,7 @@ a span:hover {
 }
 
 .underwater2 {
-    background: url(../images/underSeparer.jpg);
+    background: url(../images/bg_sea.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -202,7 +202,7 @@ a span:hover {
 }
 
 .underwater3 {
-    background: url(../images/underSeparer.jpg);
+    background: url(../images/bg_sea.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
