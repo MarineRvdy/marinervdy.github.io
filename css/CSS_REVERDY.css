@@ -368,7 +368,7 @@ a span:hover {
 }
 .timeline-line {
   position: absolute;
-  left: 16px;
+  left: -30px;
   top: 0;
   bottom: 0;
   width: 3px;
@@ -377,11 +377,10 @@ a span:hover {
 .timeline-item {
   position: relative;
   margin-bottom: 40px;
-  padding-left: 40px;
 }
 .timeline-dot {
   position: absolute;
-  left: 10px;
+  left: -36px;
   top: 15px;
   width: 15px;
   height: 15px;
@@ -413,6 +412,7 @@ a span:hover {
     text-align: center;
     padding-left: 0; 
   }
+
 
     .timeline-dot {
         display: none;
