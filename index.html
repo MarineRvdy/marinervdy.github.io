@@ -1,7 +1,14 @@
 	
 <script type="text/javascript">
 function redirect() {
-    window.location='fr/index.html';
+    const userLang = navigator.language;
+
+    if (userLang.toLocaleLowerCase().startsWith('fr')) {
+        window.location='fr/index.html';
+    } else {
+        window.location='en/index.html';
+    }
+    
 }
-setTimeout(redirect(),1000);
+setTimeout(redirect,1000);
 </script>
